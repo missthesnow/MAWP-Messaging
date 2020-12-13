@@ -1,0 +1,12 @@
+.data
+public
+views
+.env
+.glitch-assets
+firebase-config.js
+login.css
+OLD-login.html
+OLDconversations.html
+OLDmessages.html
+README.txt
+test.js
