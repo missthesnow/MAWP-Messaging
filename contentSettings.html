@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Settings</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Settings">
+
+    <link href="unified.css" type="text/css" rel="stylesheet">
+</head>
+<header>
+    <a name="top"></a>
+    <h1>Settings</h1>
+</header>
+<body>
+    <nav>        
+        <ul><h3><a href="./personalSettings.html">Personal Info</a> • <a href="./contentSettings.html">Content Settings</a></h3></ul>
+    </nav>
+  <hr>
+    <!--Display Settings-->
+    <div>
+        <h3>Display Settings</h3>
+        <!--Turn on Dark Mode (Button)-->
+        <p><b>Display Mode</b></p>
+        <button type="button" class="button">Dark Mode</button>
+        <form style="text-align: left;">
+    </div>
+    <!--Content Settings-->
+    <div>
+        <h3>Content Settings</h3>
+        <form style= "text-align: left;">
+          <!--Toggle predefined profanity filter-->
+            <p><b>Explicit Content Filter</b></p>
+            <p>Censors out a predefined list of profanity and rude words from your incoming messages.</p>
+            <input type="radio" id="filterOn" name="filter" value="filterOn">
+            <label for="filterOn">On</label>
+            <input type="radio" id="filterOff" name="filter" value="filterOff">
+            <label for="filterOff">Off</label><br>
+
+          <!--Toggle custom profanity filter-->
+            <p><b>Custom Filter</b></p>
+            <input type="radio" id="customOn" name="custom" value="customOn">
+            <label for="customOn">On</label>
+            <input type="radio" id="customOff" name="custom" value="customOff">
+            <label for="customOff">Off</label><br>
+          <!--Text box for user specified filter words, will require communication with Firebase-->
+            <br><label for="customList">Enter any additional words you wish to have filtered from your incoming messages.</label><br>
+            <textarea name="customList" rows="2" cols="50"></textarea>
+          <!--Add submit button to submit to Firebase?-->
+        </form>
+    </div>
+</body>
+<footer style="clear: right; text-align: center;">
+<!--Placeholder-->
+</footer>
+</html>

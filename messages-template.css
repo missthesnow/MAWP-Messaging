@@ -1,0 +1,127 @@
+  .container {
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+    color: white;
+    font-size:x-large;
+
+  }
+  
+  .darker {
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+  }
+
+  .time{
+      background: transparent;
+      padding-top: 0px;
+  }
+  
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  .time-right {
+    float: right;
+    color: #858587;
+  }
+  
+  .time-left {
+    float: left;
+    color: #858587;
+  }
+  .header {
+    padding: 10px 16px;
+    background: #555;
+    color: #f1f1f1;
+  }
+
+  .contact{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+  }
+
+  .contact img {
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+#send {
+  background: #6879b3;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  text-shadow:none;
+  width: 15%;
+  padding: 10px;
+
+}
+
+#send:hover {
+  background: #414b70;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  text-shadow:none;]
+}
+
+input[type="text"]
+{
+  border: none;
+  padding: 10px;
+  margin 10px, 10px, 10px, 10px;
+  border-radius:10px;
+  width: 80%;
+  background-color: #8abde6;
+  color: white;
+}
+
+footer
+{
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  width: 100%;
+}
+
+html{
+  background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+	        background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+}
+
+#back {
+  background-color: #73b9b7;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+  position: fixed;
+  border-color: transparent;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Conversation Settings</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Settings">
+
+    <link href="unified.css" type="text/css" rel="stylesheet">
+</head>
+<header>
+    <h1>Conversation Settings</h1>
+</header>
+<body>
+    <nav>        
+      <!--This is a placeholder link back to return to the selected conversation-->
+        <ul><h3><a href="LINK HERE" style="color:#3264a8;">←</a></h3></ul>
+    </nav>
+  <hr>
+    <!--Conversation Settings-->
+    <div>
+        <h3>Conversation General Settings</h3>
+        <form style="text-align: left;">
+          <!--Toggle sending of read receipts-->
+            <p><b>Send Read Receipts</b></p>
+            <input type="radio" id="receiptOn" name="receipt" value="receiptOn">
+            <label for="receiptOn">On</label>
+            <input type="radio" id="receiptOff" name="receipt" value="receiptOff">
+            <label for="receiptOff">Off</label><br>
+          <!--Convo color: This was something we talked about adding to individual conversation settings, 
+              But I do not remember what it is supposed to affect. I have put a generic color select drop 
+              down list here for the time being.-->              
+            <p><b>Conversation Color</b></p>
+            <select id="convoColor" name="convoColor">
+            <option value="default">Default</option>
+                <!--Default is color value #3264A8 - This is the color Aaron used on the sign in page.-->
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="lightgreen">Light Green</option>
+            <option value="darkgreen">Dark Green</option>
+            <option value="lightblue">Light Blue</option>
+            <option value="darkblue">Dark Blue</option>
+            <option value="purple">Purple</option>
+            <option value="pink">Pink</option>
+              <!--Very easy to add additional colors or remove colors if desired-->
+            </select>
+        </form>
+    </div>
+
+    <!--Conversation Content Settings
+        This is not something we discussed doing, but depending on difficulty of implementation, could be added.-->
+    <div>
+        <h3>Content Settings</h3>
+        <form style="text-align: left;">
+          <!--Toggle predefined profanity filter-->
+            <p><b>Explicit Content Filter</b></p>
+            <p>Censors out a predefined list of profanity and rude words from your incoming messages from this specific user.</p>
+            <input type="radio" id="filterOn" name="filter" value="filterOn">
+            <label for="filterOn">On</label>
+            <input type="radio" id="filterOff" name="filter" value="filterOff">
+            <label for="filterOff">Off</label><br>
+
+          <!--Toggle custom profanity filter-->
+            <p><b>Custom Filter</b></p>
+            <input type="radio" id="customOn" name="custom" value="customOn">
+            <label for="customOn">On</label>
+            <input type="radio" id="customOff" name="custom" value="customOff">
+            <label for="customOff">Off</label><br>
+          <!--Text box for user specified filter words, will require communication with Firebase-->
+            <br><label for="customList">Enter any additional words you wish to have filtered from your incoming messages from this specific user.</label><br>
+            <textarea name="customList" rows="2" cols="50"></textarea>
+            <!--Add submit button to submit to Firebase?-->
+        </form>
+    </div>
+</body>
+<footer style="clear: right; text-align: center;">
+<!--Placeholder-->
+</footer>
+</html>
